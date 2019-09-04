@@ -6,11 +6,25 @@ class Business {
     String email
     String enterpriseName
     Double monthlyRevenue
+    BaseRate baseRate
 
     static constraints = {
         name maxSize: 50
         email email: true
         enterpriseName maxSize: 50
         monthlyRevenue range: 1000..10000000
+        baseRate validator: { val, obj, errors ->
+            if(obj.monthlyRevenue > val.maxRevenue) {
+                errors.rejectValue('baseRate', 'revenue.tooBig')
+                return false
+            }
+
+            if(obj.monthlyRevenue < val.minRevenue) {
+                errors.rejectValue('baseRate', 'revenue.tooSmall')
+                return false
+            }
+
+            return true
+        }
     }
 }

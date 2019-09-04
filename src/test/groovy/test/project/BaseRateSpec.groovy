@@ -39,7 +39,7 @@ class BaseRateSpec extends Specification implements DomainUnitTest<BaseRate> {
     }
 
 
-   void "Verify minimum and maximum revenue for right values"(){
+   void "Verify minimum and maximum revenue for right values"() {
 
         when: "Set right values for the fields max and min revenue"
         baseRate.maxRevenue = maxRevenue
@@ -55,7 +55,7 @@ class BaseRateSpec extends Specification implements DomainUnitTest<BaseRate> {
     }
 
 
-    void "Verify if max revenue is great than min revenue"(){
+    void "Verify if max revenue is great than min revenue"() {
 
         when: "Set right values for the fields max and min revenue"
         baseRate.maxRevenue = maxRevenue
@@ -70,7 +70,7 @@ class BaseRateSpec extends Specification implements DomainUnitTest<BaseRate> {
 
     }
 
-    void "Verify if max revenue less than min revenue fails"(){
+    void "Verify if max revenue less than min revenue fails"() {
 
         when: "Set wrong values for the fields max and min revenue"
         baseRate.maxRevenue = maxRevenue
