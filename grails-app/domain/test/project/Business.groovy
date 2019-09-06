@@ -1,5 +1,5 @@
 package test.project
-/* A business sells its accounts receivable (i.e., Bills) at a discount.[ */
+/* A business sells its accounts receivable (i.e., Bills) at a discount. */
 class Business {
 
     String name
@@ -25,6 +25,19 @@ class Business {
             }
 
             return true
+        }
+    }
+
+    void setMonthlyRevenue(Double monthlyRevenue) {
+        this.monthlyRevenue = monthlyRevenue
+
+        BaseRate baseRate = BaseRate.createCriteria().get {
+            le('minRevenue', monthlyRevenue)
+            ge('maxRevenue', monthlyRevenue)
+        }
+
+        if(baseRate) {
+            this.baseRate = baseRate
         }
     }
 }

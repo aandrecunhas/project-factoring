@@ -6,9 +6,12 @@
 // to create separate JavaScript files as needed.
 //
 //= require jquery-2.2.0.min
+//= jquery.mask.min
+//= masks
 //= require bootstrap
 //= require_tree .
 //= require_self
+
 
 if (typeof jQuery !== 'undefined') {
     (function($) {

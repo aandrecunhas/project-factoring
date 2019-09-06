@@ -11,7 +11,7 @@ class Bill {
 
     static constraints = {
         baseRatePercentage range: 0..100
-        originalValue range: 0..10000000
+        originalValue range: 500..10000000
         daysToPay range: 10..1000
     }
 
@@ -25,6 +25,6 @@ class Bill {
     }
 
     def getDiscount() {
-        return this.factoringRate * this.originalValue
+        return this.factoringRate / 100 * this.originalValue
     }
 }

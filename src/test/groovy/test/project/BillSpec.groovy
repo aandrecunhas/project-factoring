@@ -53,8 +53,8 @@ class BillSpec extends Specification implements DomainUnitTest<Bill> {
         where:
         baseRatePercentage | originalValue | daysToPay | wrongAttribute | expectedError
         150 | 1500 | 28 | 'baseRatePercentage' | 'bill.baseRatePercentage.range.error'
-        1.65 | -19 | 35 | 'originalValue' | 'bill.originalValue.range.error'
-        1.65 | 5 | 30000000 | 'daysToPay' | 'bill.daysToPay.range.error'
+        1.65 | 50 | 35 | 'originalValue' | 'bill.originalValue.range.error'
+        1.65 | 600 | 30000000 | 'daysToPay' | 'bill.daysToPay.range.error'
 
     }
 

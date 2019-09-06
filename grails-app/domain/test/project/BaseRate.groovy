@@ -35,4 +35,9 @@ class BaseRate {
 
         }
     }
+
+    @Override
+    String toString() {
+        return "${this.percentage} %"
+    }
 }

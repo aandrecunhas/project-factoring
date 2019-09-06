@@ -90,4 +90,19 @@ class BusinessSpec extends Specification implements DomainUnitTest<Business> {
         25000 | 1.65 | 10000 | 20000 | "revenue.tooBig"
     }
 
+    void "Test if base rate is created when business is persisted"() {
+        when: "create business without base rate"
+
+        new BaseRate(percentage: 1.65, minRevenue: 5000, maxRevenue: 20000).save()
+
+        business.name = "André Cunha"
+        business.email = "aandrecunhas@gmail.com"
+        business.enterpriseName = "André Móveis"
+        business.monthlyRevenue = 15000
+        business.save()
+
+        then: "base rate of business should not be null"
+        business.baseRate != null
+    }
+
 }
