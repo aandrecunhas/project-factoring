@@ -41,6 +41,8 @@ As seguintes taxas foram cadastradas no BootStrap do sistema
 
 ## Modelo de Dados
 
+O domínio de dados fica na seguinte pasta: ```grails-app/domain/test/project```
+
 <p align="center">
   <img src="https://github.com/aandrecunhas/project-factoring/blob/master/img/DiagramaClasse.png">
 </p>
@@ -51,12 +53,31 @@ As seguintes taxas foram cadastradas no BootStrap do sistema
 
 ## Testes Automatizados
 
+Os testes ficam na seguinte pasta: ```src/test/groovy/test/project```
+
 Os seguintes testes foram aplicados
 
 * Testes de Classe de Domínio
+  * BaseRateSpec:
+      1) Verify values 1 to 100 for percentage field
+      2) Verify wrong values for percentage field
+      3) Verify minimum and maximum revenue for right values
+      4) Verify if max revenue is great than min revenue
+      5) Verify if max revenue less than min revenue fails
+  * BusinessSpec:
+      1) Test if wrong attribute in business class will fail
+      2) Test attribute of business
+      3) Test if base rate is compatible with business revenue
+      4) Test if monthly revenue and base rate min and max revenue fails
+      5) Test if base rate is created when business is persisted
+   * BillSpec:
+      1) Test Bill attributes
+      2) Test if wrong attributes for Bill class will fail
+      3) Verify if factoringRate, baseRatePercentage and daysToPay are consistent
+      4) Verify if amount receivable and discount are consistent
 
 * Testes de Controller
-
+      Os testes do controller foram gerados automaticamente pelo framework, apenas detalhes foram ajustados.
 
 ## Trabalhos Futuros
 
