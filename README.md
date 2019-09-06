@@ -1,6 +1,6 @@
 # Factoring Project
 
-Web app desenvolvido em Grails/Groovy para estimar a taxa e valor a receber de uma empresa que esteja realizando uma antecipação
+Web app desenvolvido em Grails/Groovy para calcular a taxa final e valor a receber de uma empresa que esteja realizando uma antecipação
 
 ## Instruções para execução com Docker
 
