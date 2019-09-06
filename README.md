@@ -55,7 +55,7 @@ O domínio de dados fica na seguinte pasta: ```grails-app/domain/test/project```
 
 Os testes ficam na seguinte pasta: ```src/test/groovy/test/project```
 
-Os seguintes testes foram aplicados
+Os seguintes testes foram aplicados:
 
 * Testes de Classe de Domínio
   * BaseRateSpec:
@@ -76,8 +76,8 @@ Os seguintes testes foram aplicados
       3) Verify if factoringRate, baseRatePercentage and daysToPay are consistent
       4) Verify if amount receivable and discount are consistent
 
-* Testes de Controller
-      Os testes do controller foram gerados automaticamente pelo framework, apenas detalhes foram ajustados.
+* Testes de Controller:
+      * Os testes do controller foram gerados automaticamente pelo framework, apenas detalhes foram ajustados.
 
 ## Trabalhos Futuros
 
