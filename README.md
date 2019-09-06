@@ -41,6 +41,10 @@ As seguintes taxas foram cadastradas no BootStrap do sistema
 
 ## Modelo de Dados
 
+<p align="center">
+  <img src="https://github.com/aandrecunhas/project-factoring/blob/master/img/DiagramaClasse.png">
+</p>
+
 ## Testes Automatizados
 
 Os seguintes testes foram aplicados
