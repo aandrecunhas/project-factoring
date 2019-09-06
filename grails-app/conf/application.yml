@@ -99,7 +99,7 @@ environments:
     development:
         dataSource:
             dbCreate: update
-            url: jdbc:postgresql://localhost:5432/project_test
+            url: jdbc:postgresql://app-db:5432/project_test
     test:
         dataSource:
             dbCreate: update
