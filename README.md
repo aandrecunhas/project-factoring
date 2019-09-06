@@ -22,22 +22,22 @@ Web app desenvolvido em Grails/Groovy para calcular a taxa final e valor a receb
 
 ## Demais Informações do Sistema
 
-1) As taxas bases são cadastradas automaticamente no BootStrap do sistema, foram cadastradas as seguinte taxas
+As seguintes taxas foram cadastradas no BootStrap do sistema
  * 1,5% para empresas com faturamento mensal entre R$ 0,00 e R$ 49.999,00
  * 1,65% para empresas com faturamento mensal entre R$ 50.000,00 e R$ 100.000,00
  * 1,8% para empresas com faturamento mensal entre  R$ 100.001,00 e R$ R$ 1.000.000,00
 
 ## Requisitos Funcionais
 
-RF1 - O sistema deve cadastrar automaticamente taxas bases predefinidas, sendo que cada taxa deve ter um valor de faturamento minimo e valor de faturamento máximo.
+**RF1** - O sistema deve cadastrar automaticamente taxas bases predefinidas, sendo que cada taxa deve ter um valor de faturamento minimo e valor de faturamento máximo.
 
-RF2 - O sistema deve permitir o cadastro de empresas com os seguintes campos: Nome da pessoa, Email, Nome da Empresa, Faturamento Mensal.
+**RF2** - O sistema deve permitir o cadastro de empresas com os seguintes campos: Nome da pessoa, Email, Nome da Empresa, Faturamento Mensal.
 
-RF3 - O sistema deve automaticamente encontrar uma taxa base predefinida para a empresa durante o seu cadastro, a taxa será definida de acordo com o faturamento mensal, que deve está entre o faturamento minimo e máximo da taxa base encontrada.
+**RF2** - O sistema deve automaticamente encontrar uma taxa base predefinida para a empresa durante o seu cadastro, a taxa será definida de acordo com o faturamento mensal, que deve está entre o faturamento minimo e máximo da taxa base encontrada.
 
-RF4 - O sistema deve permitir o cálculo da taxa final de um titulo de acordo com o valor informado de prazo e valor original do titulo. Esse cálculo da taxa final deve ser taxaBase % a cada 10 dias.
+**RF3** - O sistema deve permitir o cálculo da taxa final de um titulo de acordo com o valor informado de prazo e valor original do titulo. Esse cálculo da taxa final deve ser taxaBase % a cada 10 dias.
 
-RF5 - Deverá ser exibido para o usuário as informações de valor a receber e desconto após inserção das informaçes do titulo.
+**RF4** - Deverá ser exibido para o usuário as informações de valor a receber e desconto após inserção das informaçes do titulo.
 
 ## Modelo de Dados
 
