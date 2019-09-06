@@ -16,7 +16,7 @@ Web app desenvolvido em Grails/Groovy para calcular a taxa final e valor a receb
 
 3) Preencha os dados do formulário e clique em "Criar"
 
-4) Será exibida uma tela para cálcular os valores a receber, insira os campos necessários e clique em "Calcular"
+4) Será exibida uma tela para calcular os valores a receber, insira os campos necessários e clique em "Calcular"
 
 5) Os valores de desconto e valor a receber serão exibidos na listagem logo abaixo
 
@@ -33,11 +33,11 @@ As seguintes taxas foram cadastradas no BootStrap do sistema
 
 **RF2** - O sistema deve permitir o cadastro de empresas com os seguintes campos: Nome da pessoa, Email, Nome da Empresa, Faturamento Mensal.
 
-**RF2** - O sistema deve automaticamente encontrar uma taxa base predefinida para a empresa durante o seu cadastro, a taxa será definida de acordo com o faturamento mensal, que deve está entre o faturamento minimo e máximo da taxa base encontrada.
+**RF3** - O sistema deve automaticamente encontrar uma taxa base predefinida para a empresa durante o seu cadastro, a taxa será definida de acordo com o faturamento mensal, que deve está entre o faturamento minimo e máximo da taxa base encontrada.
 
-**RF3** - O sistema deve permitir o cálculo da taxa final de um titulo de acordo com o valor informado de prazo e valor original do titulo. Esse cálculo da taxa final deve ser taxaBase % a cada 10 dias.
+**RF4** - O sistema deve permitir o cálculo da taxa final de um titulo de acordo com o valor informado de prazo e valor original do titulo. Esse cálculo da taxa final deve ser taxaBase % a cada 10 dias.
 
-**RF4** - Deverá ser exibido para o usuário as informações de valor a receber e desconto após inserção das informaçes do titulo.
+**RF5** - Deverá ser exibido para o usuário as informações de valor a receber e desconto após inserção das informaçes do titulo.
 
 ## Modelo de Dados
 
@@ -45,7 +45,7 @@ As seguintes taxas foram cadastradas no BootStrap do sistema
 
 Os seguintes testes foram aplicados
 
-* Testes de Classe de Dominio
+* Testes de Classe de Domínio
 
 * Testes de Controller
 
