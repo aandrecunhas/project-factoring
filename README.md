@@ -45,6 +45,10 @@ As seguintes taxas foram cadastradas no BootStrap do sistema
   <img src="https://github.com/aandrecunhas/project-factoring/blob/master/img/DiagramaClasse.png">
 </p>
 
+* BaseRate: Taxa base a ser aplicada 
+* Business: Empresa que irá realizar a antecipação
+* Bill: Titulos da empresa
+
 ## Testes Automatizados
 
 Os seguintes testes foram aplicados
