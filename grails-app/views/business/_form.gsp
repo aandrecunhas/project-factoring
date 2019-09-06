@@ -22,7 +22,7 @@
                 </div>
                 <div class="form-group">
                     <label for="monthlyRevenue">Faturamento Mensal</label>
-                    <g:field type="number" name="monthlyRevenue" class="form-control money" value="${g.formatNumber(number: business?.monthlyRevenue ?: 0.0, format: '#,##0.00')}" required=""></g:field>
+                    <g:field name="monthlyRevenue" class="form-control money" value="${g.formatNumber(number: business?.monthlyRevenue ?: 0.0, format: '#,##0.00')}" required=""></g:field>
                 </div>
             </div>
         </div>

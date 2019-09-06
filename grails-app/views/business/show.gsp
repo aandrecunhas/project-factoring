@@ -17,7 +17,7 @@
             </ul>
         </div>
         <div id="crud-bill" class="content scaffold-show">
-            <h1>Calcule sua taxa de antecipação final</h1>
+            <h1>Calcule sua taxa de antecipação final - Insira os dados do seu título</h1>
             <g:form action="saveBill">
                 <g:hiddenField name="business.id" value="${business.id}"/>
                 <div class="panel">
@@ -58,7 +58,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <g:each in="${Bill.list()}" var="bill">
+                                <g:each in="${Bill.findAllByBusiness(business)}" var="bill">
                                     <tr>
                                         <td><g:formatNumber number="${bill.originalValue}" type="currency"/></td>
                                         <td>${bill.daysToPay}</td>
